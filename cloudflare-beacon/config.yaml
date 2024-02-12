@@ -1,0 +1,23 @@
+---
+name: Cloudflare beacon
+version: dev
+slug: cloudflare-network-beacon
+description: A TLS endpoint that acts like a network location beacon for WARP to detect a managed network
+url: https://github.com/sevimuelli/ha-addon-cloudflare-beacon
+arch:
+  - aarch64
+  - amd64
+  - armv7
+init: false
+map:
+  - ssl
+ports:
+  443/tcp: 3333
+ports_description:
+  443/tcp: Port that serves a TLS certificate
+options:
+  certfile: /ssl/cloudflare-beacon/cloudflare-beacon.pem
+  keyfile: /ssl/cloudflare-beacon/cloudflare-beacon.key
+schema:
+  certfile: str
+  keyfile: str

@@ -1,0 +1,5 @@
+{
+  "name": "Home Assistant Cloudflare network beacon",
+  "url": "https://github.com/sevimuelli/ha-addon-cloudflare-beacon",
+  "maintainer": "Severin Müller"
+}
